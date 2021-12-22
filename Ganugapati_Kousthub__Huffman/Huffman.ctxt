@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Huffman
+comment1.params=x\ y
+comment1.target=int\ compare(HuffmanNode,\ HuffmanNode)
+comment2.params=root\ s
+comment2.target=void\ printTreeCode(HuffmanNode,\ java.lang.String)
+comment3.params=root\ s\ charBitMap
+comment3.target=void\ saveTreeCode(HuffmanNode,\ java.lang.String,\ java.util.HashMap)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment5.params=charBitMap
+comment5.target=void\ compress(java.util.HashMap)
+comment6.params=root
+comment6.target=void\ decompress(HuffmanNode)
+comment7.params=
+comment7.target=java.util.HashMap\ charFreqMap()
+numComments=8

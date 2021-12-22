@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=BitOutputStream
+comment0.text=\n\ Write\ bits-at-a-time\ where\ the\ number\ of\ bits\ is\ between\ 1\ and\ 32.\n\ Client\ programs\ must\ call\ <code>flush</code>\ or\n\ <code>close</code>\ when\ finished\ writing\ or\ not\ all\ bits\ will\ be\ written.\n\ This\ class\ is\ intended\ to\ be\ used\ with\ <code>BitInputStream</code>\ to\n\ facilitate\ reading\ and\ writing\ data\ in\ a\ bits-at-a-time\ manner.\n\ <P>\n\ Updated\ for\ version\ 2.0\ to\ extend\ java.io.OutputStream\n\ <P>\n\ Any\ exceptions\ generated\ are\ rethrown\ as\ <code>RuntimeException</code>\ objects\n\ so\ client\ code\ does\ not\ have\ to\ catch\ or\ rethrow\ them.\n\ <P>\n\ @author\ Owen\ Astrachan\n\ @version\ 1.0,\ July\ 2000\n\ @version\ 2.0,\ October\ 2004\n\ @version\ 2.1,\ March\ 2010,\ Fixed\ >>\ to\ >>>\ bug\ in\ writeBits\n
+comment1.params=b
+comment1.target=void\ write(int)
+comment1.text=\n\ Required\ by\ OutputStream\ subclasses,\ write\ the\ low\n\ 8-bits\ to\ the\ underlying\ outputstream\n
+comment2.params=out
+comment2.target=BitOutputStream(java.io.OutputStream)
+comment2.text=\n\ Create\ a\ stream\ that\ writes-through\ to\ the\ <code>OutputStream</code>\ object\n\ passed\ as\ a\ parameter.\n\ @param\ out\ is\ the\ output\ stream\ to\ which\ bits\ are\ written\n
+comment3.params=
+comment3.target=void\ initialize()
+comment4.params=filename
+comment4.target=BitOutputStream(java.lang.String)
+comment4.text=\n\ Construct\ a\ bit-at-a-time\ output\ stream\ with\ specified\ file\n\ name.\n\ @param\ filename\ is\ the\ name\ of\ the\ file\ being\ written\n\ @throws\ RuntimeException\ if\ opening\ file\ fails\ for\ either\ FileNotFound\n\ or\ for\ Security\ exceptoins\n
+comment5.params=
+comment5.target=void\ flush()
+comment5.text=\n\ Flushes\ bits\ not\ yet\ written,\ must\ be\ called\ by\ client\n\ programs\ if\ <code>close</code>\ isn't\ called.\n\ @throws\ RuntimeException\ if\ there's\ a\ problem\ writing\ bits\n
+comment6.params=
+comment6.target=void\ close()
+comment6.text=\n\ Releases\ system\ resources\ associated\ with\ file\ and\n\ flushes\ bits\ not\ yet\ written.\ Either\ this\ function\n\ or\ flush\ must\ be\ called\ or\ not\ all\ bits\ will\ be\ written\n\ @throws\ RuntimeException\ if\ close\ fails\n
+comment7.params=howManyBits\ value
+comment7.target=void\ writeBits(int,\ int)
+comment7.text=\n\ Write\ specified\ number\ of\ bits\ from\ value\ to\ a\ file.\n\ @param\ howManyBits\ is\ number\ of\ bits\ to\ write\ (1-32)\n\ @param\ value\ is\ source\ of\ bits,\ rightmost\ bits\ are\ written\n\ @throws\ RuntimeException\ if\ there's\ an\ I/O\ problem\ writing\ bits\n
+numComments=8
